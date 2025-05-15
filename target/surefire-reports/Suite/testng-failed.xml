@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" verbose="0">
+  <listeners>
+    <listener class-name="qaAcadaemy.testComponents.Listeners"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="ecommerceOrderTest(failed)" verbose="0">
+    <classes>
+      <class name="qaAcadaemy.ecommerceOrderTest">
+        <methods>
+          <include name="LaunchApplication"/>
+          <include name="placeOrder" invocation-numbers="0"/>
+          <include name="OrderHistoryTest"/>
+          <include name="closeDriver"/>
+        </methods>
+      </class> <!-- qaAcadaemy.ecommerceOrderTest -->
+    </classes>
+  </test> <!-- ecommerceOrderTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

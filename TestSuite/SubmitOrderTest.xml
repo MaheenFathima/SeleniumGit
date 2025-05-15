@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite" parallel="tests">
+<groups>
+<run>
+<include name="SubmitOrder"/>
+</run>
+</groups>
+  <test thread-count="5" name="ecommerceOrderTest">
+    <classes>
+      <class name="qaAcadaemy.ecommerceOrderTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="ErrorValidationsTest">
+    <classes>
+      <class name="qaAcadaemy.ErrorValidationsTest"/>
+    </classes>
+  </test>
+</suite> <!-- Suite -->

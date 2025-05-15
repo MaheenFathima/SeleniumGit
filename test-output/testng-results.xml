@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="3" failed="1" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-05-15T01:11:33 EDT" name="Suite" finished-at="2025-05-15T01:12:11 EDT" duration-ms="37867">
+    <groups>
+      <group name="ErrorHandling">
+        <method signature="ErrorValidationsTest.LoginErrorValidation()[pri:0, instance:qaAcadaemy.ErrorValidationsTest@210ab13f]" name="LoginErrorValidation" class="qaAcadaemy.ErrorValidationsTest"/>
+      </group> <!-- ErrorHandling -->
+      <group name="SubmitOrder">
+        <method signature="ecommerceOrderTest.placeOrder(java.util.HashMap)[pri:0, instance:qaAcadaemy.ecommerceOrderTest@4d1c005e]" name="placeOrder" class="qaAcadaemy.ecommerceOrderTest"/>
+      </group> <!-- SubmitOrder -->
+    </groups>
+    <test started-at="2025-05-15T01:11:33 EDT" name="ErrorValidationsTest" finished-at="2025-05-15T01:12:01 EDT" duration-ms="27621">
+      <class name="qaAcadaemy.ErrorValidationsTest">
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:qaAcadaemy.ErrorValidationsTest@210ab13f]" started-at="2025-05-15T01:11:33 EDT" name="LaunchApplication" finished-at="2025-05-15T01:11:48 EDT" duration-ms="14127" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="LoginErrorValidation()[pri:0, instance:qaAcadaemy.ErrorValidationsTest@210ab13f]" started-at="2025-05-15T01:11:48 EDT" name="LoginErrorValidation" finished-at="2025-05-15T01:11:48 EDT" duration-ms="645" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginErrorValidation -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:qaAcadaemy.ErrorValidationsTest@210ab13f]" started-at="2025-05-15T01:11:48 EDT" name="closeDriver" finished-at="2025-05-15T01:11:48 EDT" duration-ms="122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:qaAcadaemy.ErrorValidationsTest@210ab13f]" started-at="2025-05-15T01:11:48 EDT" name="LaunchApplication" finished-at="2025-05-15T01:11:54 EDT" duration-ms="5480" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="ProductValidation()[pri:0, instance:qaAcadaemy.ErrorValidationsTest@210ab13f]" started-at="2025-05-15T01:11:54 EDT" name="ProductValidation" finished-at="2025-05-15T01:12:01 EDT" duration-ms="7157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductValidation -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:qaAcadaemy.ErrorValidationsTest@210ab13f]" started-at="2025-05-15T01:12:01 EDT" name="closeDriver" finished-at="2025-05-15T01:12:01 EDT" duration-ms="64" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- qaAcadaemy.ErrorValidationsTest -->
+    </test> <!-- ErrorValidationsTest -->
+    <test started-at="2025-05-15T01:11:33 EDT" name="ecommerceOrderTest" finished-at="2025-05-15T01:12:11 EDT" duration-ms="37867">
+      <class name="qaAcadaemy.ecommerceOrderTest">
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:qaAcadaemy.ecommerceOrderTest@4d1c005e]" started-at="2025-05-15T01:11:33 EDT" name="LaunchApplication" finished-at="2025-05-15T01:11:48 EDT" duration-ms="14050" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="placeOrder(java.util.HashMap)[pri:0, instance:qaAcadaemy.ecommerceOrderTest@4d1c005e]" started-at="2025-05-15T01:11:48 EDT" name="placeOrder" data-provider="getData" finished-at="2025-05-15T01:11:57 EDT" duration-ms="9936" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Mahin@1116, product=ADIDAS ORIGINAL, email=mahin@example.com}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at qaAcadaemy.ecommerceOrderTest.placeOrder(ecommerceOrderTest.java:48)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- placeOrder -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:qaAcadaemy.ecommerceOrderTest@4d1c005e]" started-at="2025-05-15T01:11:58 EDT" name="closeDriver" finished-at="2025-05-15T01:11:58 EDT" duration-ms="95" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:qaAcadaemy.ecommerceOrderTest@4d1c005e]" started-at="2025-05-15T01:11:58 EDT" name="LaunchApplication" finished-at="2025-05-15T01:12:03 EDT" duration-ms="5229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="placeOrder(java.util.HashMap)[pri:0, instance:qaAcadaemy.ecommerceOrderTest@4d1c005e]" started-at="2025-05-15T01:12:03 EDT" name="placeOrder" data-provider="getData" finished-at="2025-05-15T01:12:11 EDT" duration-ms="8184" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Mahin@1116, product=ZARA COAT 3, email=maheen@example.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- placeOrder -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:qaAcadaemy.ecommerceOrderTest@4d1c005e]" started-at="2025-05-15T01:12:11 EDT" name="closeDriver" finished-at="2025-05-15T01:12:11 EDT" duration-ms="72" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method signature="OrderHistoryTest()[pri:0, instance:qaAcadaemy.ecommerceOrderTest@4d1c005e]" started-at="2025-05-15T01:12:11 EDT" name="OrderHistoryTest" finished-at="2025-05-15T01:12:11 EDT" depends-on-methods="qaAcadaemy.ecommerceOrderTest.placeOrder" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method qaAcadaemy.ecommerceOrderTest.OrderHistoryTest() on instance qaAcadaemy.ecommerceOrderTest@4d1c005e depends on not successfully finished methods 
+[qaAcadaemy.ecommerceOrderTest.placeOrder() on instance qaAcadaemy.ecommerceOrderTest@4d1c005e]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method qaAcadaemy.ecommerceOrderTest.OrderHistoryTest() on instance qaAcadaemy.ecommerceOrderTest@4d1c005e depends on not successfully finished methods 
+[qaAcadaemy.ecommerceOrderTest.placeOrder() on instance qaAcadaemy.ecommerceOrderTest@4d1c005e]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrderHistoryTest -->
+      </class> <!-- qaAcadaemy.ecommerceOrderTest -->
+    </test> <!-- ecommerceOrderTest -->
+  </suite> <!-- Suite -->
+</testng-results>
