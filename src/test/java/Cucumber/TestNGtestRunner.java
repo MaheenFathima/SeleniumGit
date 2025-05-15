@@ -8,4 +8,3 @@ import io.cucumber.testng.CucumberOptions;
 public class TestNGtestRunner extends AbstractTestNGCucumberTests {
 
 }
-//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
