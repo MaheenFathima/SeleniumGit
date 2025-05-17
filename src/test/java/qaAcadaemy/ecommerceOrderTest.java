@@ -37,7 +37,7 @@ public class ecommerceOrderTest extends BaseTest {
 
 	@Test(dataProvider="getData",groups= {"SubmitOrder"})
 	public void placeOrder(HashMap<String,String> input) throws IOException, InterruptedException {
-
+		//check
 		String country = "India";
 
 		ProductCatalogue productCatalogue = landingPage.Login(input.get("email"),input.get("password"));
